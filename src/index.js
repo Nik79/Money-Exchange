@@ -21,7 +21,7 @@ module.exports = function makeExchange(currency) {
 		{
 			var value = Math.floor(current/currencies[key]);
 			result[key] = value;
-			current -= current - value*currencies[key];
+			current = current - value*currencies[key];
 		}
 	}
 	
